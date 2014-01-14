@@ -38,7 +38,7 @@ class price_controller extends CI_Controller {
         } else {
             try {
                 $crud = new grocery_CRUD();
-                $crud->set_theme('twitter-bootstrap');
+                $crud->set_theme('precios');
                 $crud->set_table('listas_de_precios');
                 $crud->where('id_establecimiento', $this->_guestProfile['guestData']['id_establecimiento']);
                 $crud->set_subject('Precios');
