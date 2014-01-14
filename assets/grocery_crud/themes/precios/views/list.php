@@ -37,22 +37,7 @@ if(!empty($list)){ ?>
 							</button>
 							<ul class="dropdown-menu">
 								<?php
-								if(!$unset_edit){?>
-									<li>
-										<a href="<?php echo $row->edit_url?>" title="<?php echo $this->l('list_edit')?> <?php echo $subject?>">
-											<?php echo $this->l('list_edit') . ' ' . $subject; ?>
-										</a>
-									</li>
-								<?php
-								}
-								if(!$unset_delete){?>
-									<li>
-										<a href="javascript:void(0);" data-target-url="<?php echo $row->delete_url?>" title="<?php echo $this->l('list_delete')?> <?php echo $subject?>" class="delete-row" >
-											<?php echo $this->l('list_delete') . ' ' . $subject; ?>
-										</a>
-									</li>
-								<?php
-								}
+								
 								if(!empty($row->action_urls)){
 									foreach($row->action_urls as $action_unique_id => $action_url){
 										$action = $actions[$action_unique_id];
@@ -69,6 +54,23 @@ if(!empty($list)){ ?>
 										</li>
 									<?php
 									}
+								}
+                                                                
+                                                                if(!$unset_edit){?>
+									<li>
+										<a href="<?php echo $row->edit_url?>" title="<?php echo $this->l('list_edit')?> <?php echo $subject?>">
+											<?php echo 'Configurar'; ?>
+										</a>
+									</li>
+								<?php
+								}
+								if(!$unset_delete){?>
+									<li>
+										<a href="javascript:void(0);" data-target-url="<?php echo $row->delete_url?>" title="<?php echo $this->l('list_delete')?> <?php echo $subject?>" class="delete-row" >
+											<?php echo 'Eliminar' ?>
+										</a>
+									</li>
+								<?php
 								}
 								?>
 								</ul>
