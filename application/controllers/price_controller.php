@@ -51,13 +51,8 @@ class price_controller extends CI_Controller {
                 $crud->callback_column('estado', array($this, '_callback_estado'));
                 $crud->display_as('name', 'Lista de Precios');
 
-                $crud->unset_edit();
-                $crud->unset_delete();
-
                 $crud->add_action('Editar Precios', '', '', '', array($this, 'addPriceAction'));
-                $crud->add_action('Configurar', '', '', '', array($this, 'configPriceAction'));
-                //$crud->add_action('Eliminar', '', '', '', array($this, 'deletePriceAction'));
-
+                
                 $output = $crud->render();
                 $this->output($output);
             } catch (Exception $e) {
