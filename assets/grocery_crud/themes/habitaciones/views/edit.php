@@ -1,0 +1,190 @@
+<?php
+$this->set_css($this->default_theme_path.'/habitaciones/css/style.css');
+$this->set_css($this->default_theme_path.'/twitter-bootstrap/css/style.css');
+$this->set_css($this->default_theme_path.'/twitter-bootstrap/css/jquery-ui/flick/jquery-ui-1.9.2.custom.css');
+
+$this->set_js_lib($this->default_javascript_path.'/'.grocery_CRUD::JQUERY);
+
+//	JAVASCRIPTS - JQUERY-UI
+$this->set_js($this->default_theme_path.'/twitter-bootstrap/js/jquery-ui/jquery-ui-1.9.2.custom.js');
+//	JAVASCRIPTS - JQUERY LAZY-LOAD
+$this->set_js_lib($this->default_javascript_path.'/common/lazyload-min.js');
+
+if (!$this->is_IE7()) {
+	$this->set_js_lib($this->default_javascript_path.'/common/list.js');
+}
+//	JAVASCRIPTS - TWITTER BOOTSTRAP
+$this->set_js($this->default_theme_path.'/twitter-bootstrap/js/libs/bootstrap/bootstrap.min.js');
+$this->set_js($this->default_theme_path.'/twitter-bootstrap/js/libs/bootstrap/application.js');
+//	JAVASCRIPTS - MODERNIZR
+$this->set_js($this->default_theme_path.'/twitter-bootstrap/js/libs/modernizr/modernizr-2.6.1.custom.js');
+//	JAVASCRIPTS - TABLESORTER
+$this->set_js($this->default_theme_path.'/twitter-bootstrap/js/libs/tablesorter/jquery.tablesorter.min.js');
+//	JAVASCRIPTS - JQUERY-COOKIE
+$this->set_js($this->default_theme_path.'/twitter-bootstrap/js/cookies.js');
+//	JAVASCRIPTS - JQUERY-FORM
+$this->set_js($this->default_theme_path.'/twitter-bootstrap/js/jquery.form.js');
+//	JAVASCRIPTS - JQUERY-NUMERIC
+$this->set_js($this->default_javascript_path.'/jquery_plugins/jquery.numeric.min.js');
+//	JAVASCRIPTS - JQUERY-PRINT-ELEMENT
+$this->set_js($this->default_theme_path.'/twitter-bootstrap/js/libs/print-element/jquery.printElement.min.js');
+//	JAVASCRIPTS - JQUERY FANCYBOX
+$this->set_js($this->default_javascript_path.'/jquery_plugins/jquery.fancybox-1.3.4.js');
+//	JAVASCRIPTS - JQUERY EASING
+$this->set_js($this->default_javascript_path.'/jquery_plugins/jquery.easing-1.3.pack.js');
+
+$this->set_js_config($this->default_theme_path.'/twitter-bootstrap/js/app/twitter-bootstrap-add.js');
+//	JAVASCRIPTS - JQUERY-FUNCTIONS
+$this->set_js($this->default_theme_path.'/twitter-bootstrap/js/jquery.functions.js');
+
+?>
+<div class="twitter-bootstrap crud-form">
+
+	<!-- CONTENT FOR ALERT MESSAGES -->
+	<div class="row"><div id="message-box" class="span12"></div></div>
+	<div id="main-table-box">
+            <?php
+            echo form_open( $update_url, 'method="post" id="crudForm" class="habitacionABM" autocomplete="off" enctype="multipart/form-data"');
+            ?>
+            <div id="abmTop" class="row">
+                    <div class="span12">
+                        <div class="row-fluid">
+                            <div class="span6">
+                                <h2 class="span12"><?php echo $this->l('form_add'); ?> <?php echo $subject?></h2>
+                            </div>
+                            <div class="span6 content-gral-nav">
+                                <div class="pull-right">
+                                    <input type="button" value="<?php echo $this->l('form_update_changes'); ?>" class="midium-btn blue-btn submit-form"/>
+                                    <?php 	if(!$this->unset_back_to_list) { ?>
+                                            <input type="button" value="<?php echo $this->l('form_update_and_go_back'); ?>" id="save-and-go-back-button" class="midium-btn blue-btn"/>
+                                            <input type="button" value="<?php echo $this->l('form_cancel'); ?>" class="midium-btn grey-btn return-to-list" />
+                                    <?php 	} ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="span12">
+                            <div class="row-fluid">
+                                <div class="span6">
+                                    <?php echo $input_fields['name']->input; ?>
+                                </div>
+                                <div class="span2 category">
+                                     <?php echo $input_fields['id_categoria']->input; ?>
+                                </div>
+                                <div class="span4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span12">
+                            <div class="row-fluid">
+                                <div class="span8">
+                                    <?php echo $input_fields['descripcion']->input; ?>
+                                </div>
+                                <div class="span4">
+                                    <div class="row-fluid">
+                                        <div class="span12">
+                                            <div class="roundedThree">
+                                                <input id='rounded1' type="checkbox" value="1" id="rounded1" name="resortactive"/>
+                                                <label for="rounded1"></label>
+                                                <p class="checkbox-title">Habilitada</p>
+                                            </div>
+                                            <div class="roundedThree">
+                                                <input type="checkbox" value="1" id="rounded2" id='field-online_resort' name='online_resort'/>
+                                                <label for="rounded2"></label>
+                                                <p class="checkbox-title">Reservas Online</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="span12">
+                            <div class="row">
+                                <div class="span6">
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <div class="row-fluid">
+                                                <div class="span12">
+                                                    <h4>Capacidad Estandar</h4>
+                                                </div>
+                                            </div>
+                                            <div class="row-fluid">
+                                                <div class="span6">
+                                                    <label>Adultos</label>
+                                                    <?php echo $input_fields['cant_estandar_adultos']->input; ?>
+                                                </div>
+                                                <div class="span6">
+                                                    <label>Menores</label>
+                                                    <?php echo $input_fields['cant_estandar_menores']->input; ?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="span6">
+                                            <div class="row-fluid">
+                                                <div class="span12">
+                                                    <h4>Capacidad Máxima</h4>
+                                                </div>
+                                            </div>
+                                            <div class="row-fluid">
+                                                <div class="span6">
+                                                    <label>Adultos</label>
+                                                    <?php echo $input_fields['cant_maxima_adultos']->input; ?>
+                                                </div>
+                                                <div class="span6">
+                                                    <label>Menores</label>
+                                                    <?php echo $input_fields['cant_maxima_menores']->input; ?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span3">
+                                    <div class="row">
+                                        <select name="cant_menores" data-placeholder="" id="serv_inc" class="chosen-select">
+                                            <option>Servicios Incluidos</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <select name="cant_menores" data-placeholder="" class="chosen-select">
+                                            <option>Servicios Opcionales</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="span3">
+                                    <div class="row-fluid">
+                                        <div class="span12">
+                                            <h4>Observaciones</h4>
+                                        </div>
+                                        <div class="span12">
+                                            <?php echo $input_fields['observaciones']->input; ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+			<div class="hide loading" id="ajax-loading"><?php echo $this->l('form_update_loading'); ?></div>
+		<?php echo form_close(); ?>
+	</div>
+</div>
+<script>
+	var validation_url = "<?php echo $validation_url?>",
+        list_url = "<?php echo $list_url?>",
+        message_alert_add_form = "<?php echo $this->l('alert_add_form')?>",
+        message_insert_error = "<?php echo $this->l('insert_error')?>";
+</script>

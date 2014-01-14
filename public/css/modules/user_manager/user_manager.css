@@ -1,0 +1,120 @@
+/* line 5, ../sass/template.scss */
+body#login {
+    padding-top: 121px;
+}
+/* line 7, ../sass/template.scss */
+body#internal {
+  padding-top: 33px;
+}
+/* line 8, ../sass/template.scss */
+body#internal .logo {
+  background: none;
+  width: auto;
+  margin: 0;
+}
+/* line 9, ../sass/template.scss */
+body#internal .logo a {
+  background: url(../../../img/logo_in.png) no-repeat;
+  display: inline-block;
+  width: 212px;
+  height: 26px;
+}
+
+/* line 15, ../sass/template.scss */
+.logo {
+  background: url(../../../img/logo.png) no-repeat;
+  width: 280px;
+  height: 34px;
+  margin-bottom: 54px;
+  display: block;
+}
+
+/* line 17, ../sass/template.scss */
+header {
+  width: 940px;
+  height: 60px;
+  overflow: hidden;
+  margin: auto;
+}
+/* line 19, ../sass/template.scss */
+header h1 {
+  font-size: 1.4em;
+  display: inline-block;
+  margin-left: 25px;
+  line-height: normal;
+}
+/* line 20, ../sass/template.scss */
+header .logout {
+  text-align: right;
+  height: 35px;
+  line-height: 50px;
+}
+
+/* line 24, ../sass/template.scss */
+.form-signin {
+  margin-bottom: 118px;
+}
+/* line 25, ../sass/template.scss */
+.form-signin input[type="text"], .form-signin input[type="password"] {
+  border: 1px solid #469FB9;
+  width: 394px;
+  clear: both;
+  display: block;
+  height: 45px;
+}
+/* line 26, ../sass/template.scss */
+.form-signin .icon-user {
+  background: url(../../../img/use_icon_input.jpg) no-repeat;
+  padding-left: 50px;
+}
+/* line 27, ../sass/template.scss */
+.form-signin .icon-pass {
+  background: url(../../../img/use_icon_pass.jpg) no-repeat;
+  padding-left: 50px;
+}
+/* line 28, ../sass/template.scss */
+.form-signin .btn {
+  margin: 40px 0;
+}
+/* line 29, ../sass/template.scss */
+.form-signin a.forgot {
+  color: black;
+}
+
+/* line 33, ../sass/template.scss */
+.right-info {
+  border-top: 14px solid #77CCDB;
+}
+
+/* line 35, ../sass/template.scss */
+article {
+  border-top: 1px solid #77CCDB;
+  padding: 10px 0;
+}
+/* line 36, ../sass/template.scss */
+article ul {
+  margin: 0;
+}
+/* line 37, ../sass/template.scss */
+article ul li {
+  list-style: none;
+}
+
+/* line 42, ../sass/template.scss */
+input[type="text"], input[type="password"] {
+  border-radius: 0;
+}
+
+/* line 44, ../sass/template.scss */
+.btn {
+  background: #469FB9;
+  border-radius: 0;
+  border: 0;
+}
+
+/* line 45, ../sass/template.scss */
+.btn:hover {
+  background: #111;
+  color: white;
+}
+

@@ -1,0 +1,262 @@
+.popover {
+    border: 1px solid #A5A5A5;
+    border-radius : inherit;
+    width: 436px;
+    min-height: 260px;
+}
+.divarius-popover-title .popover-title {
+    border-radius: inherit;
+    padding: 0 14px;
+    height: 42px;
+    line-height: 42px;
+}
+.divarius-popover {
+    padding-right: 5px;
+}
+.popover .popover-content {
+    padding: 5px;
+}
+.popover-content .nav-tabs > li > a {
+    font-size: 12px;
+    color: #000;
+    border-radius: 0;
+}
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover {
+    border-top: 1px solid #00A3D9;
+}
+.tab-pane {
+    height: 162px;
+    margin-top: 6px;
+}
+.tab-pane.inicio {
+    height: 116px;
+}
+
+
+/* Inicio */
+.divarius-popover ul {
+    margin: 0px;
+}
+.divarius-popover ul li {
+    list-style: none outside none;
+}
+
+.popover-content .tab-resumen, 
+.popover-content .tab-consumos, 
+.popover-content .tab-email, 
+.popover-content .tab-pasajeros, 
+.divarius-popover .row-fechas,  
+.divarius-popover .row-descripcion, 
+.divarius-popover .row-datos{
+    margin: 0;
+}
+.tab-pane .divarius-popover .row-descripcion li {
+    text-align: left;
+}
+
+.divarius-popover .row-fechas ul li:first-child{
+    width: 26%;
+    text-align: left;
+}
+.divarius-popover .row-fechas ul li:last-child{
+    width: 15%;
+}
+.divarius-popover .row-fechas ul li:nth-child(2){
+    text-align: left;
+}
+
+.divarius-popover .row-fechas ul li, 
+.divarius-popover .row-fechas ul li{
+    width: 25%;
+    margin: 0 6px 0 0;
+}
+.divarius-popover .row-descripcion ul li,
+.divarius-popover .row-datos ul li{
+    margin: 0 0 0 6px !important;
+}
+.divarius-popover .row-fechas ul li, 
+.divarius-popover .row-descripcion ul li,
+.divarius-popover .row-datos ul li,
+#controls ul li {
+    display: inline-block;
+    list-style: none outside none;
+    vertical-align: top;
+    text-align: center;
+    margin: 0 0 0 6px;
+}
+
+.divarius-res-status {
+    float: right;
+}
+#controls {
+    bottom: 6px;
+    position: absolute;
+    width: 97%;
+}
+#controls span{
+    float: left;
+}
+#controls ul {
+    float: right;
+}
+.popover-check-inn,
+.popover-check-out,
+.popover-confirmar,
+#popover-mas-info, 
+.popover-anular,
+#popover-cuenta{
+    color: #FFF;
+    height: 40px;
+    width: 90px;  
+    display: block;
+    color: #FFF;
+    line-height: 40px;
+    font-size: 13px;
+    text-decoration: none;
+}
+#popover-mas-info:hover, 
+.popover-anular:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+#popover-mas-info {
+    background: #19BB9B;
+}
+#popover-mas-info:hover {
+    background: #159F85;
+}
+.popover-anular {
+    background: #8A4B42;
+}
+.popover-anular:hover{
+    background: #BF392B;
+}
+.popover-check-inn, 
+.popover-confirmar,
+.popover-check-out {
+    background: none repeat scroll 0 0 #77CCDB;
+    color: #000000;
+    text-align: center;
+}
+/* Inicio End */
+
+/* Pasajeros y Consumo */
+.tab-pane ul{
+    margin: 0;
+    list-style-type: none; 
+}
+.tab-pane ul li{
+    overflow: auto;
+}
+.tab-pane ul li input, 
+.tab-pane ul li input{
+    height: 28px;
+    float: left;
+    border: 1px solid #999;
+}
+
+.tab-pane ul.consumos-result li, 
+.tab-pane ul li.lista{
+    margin-bottom: 10px;
+}
+.tab-pane ul li p{
+    height: 29px;
+    float: left;
+    padding: 0 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-pane ul li input.nombre, 
+.tab-pane ul li p.nombre, 
+.tab-pane ul li p.pasajero, 
+.tab-pane ul li input.pasajero{
+    width: 238px;
+}
+.tab-pane ul li input.dni, 
+.tab-pane ul li input.costo{
+    width: 104px;
+    margin: 0 5px;
+}
+.tab-pane ul li p.costo, 
+.tab-pane ul li p.dni{
+    width: 118px;
+}
+li .quitar-pasajero,
+li .agregar-pasajero, 
+li .quitar-consumo, 
+li .agregar-consumo{
+    height: 30px;
+    width: 30px;
+    text-indent: -9999em;
+    float: left;
+}
+li .quitar-pasajero, 
+li .quitar-consumo{
+    background: url(../../../img/bg-pasajero-close.png) no-repeat center;
+}
+li .agregar-pasajero, 
+li .agregar-consumo{
+    background: url(../../../img/bg-pasajero-new.png) no-repeat center;
+}
+li .agregar-pasajero:HOVER, 
+li .agregar-consumo:HOVER{
+    background: url(../../../img/bg-pasajero-new-ov.png) no-repeat center;
+}
+
+/* Pasajeros y Consumo End */
+
+/* eMail */
+#asunto{
+    height: 28px;
+}
+#asunto, 
+#contenido{
+    width: 298px;
+    border: 1px solid #999;
+}
+#contenido{
+    height: 109px;
+}
+#enviar-email{
+    background: #19BB9B;
+    height: 30px;
+    width: 90px;
+    color: #FFF;
+    font-size: 13px;
+    float: right;
+    margin: 81px 000000px 0;
+    text-align: center;
+    line-height: 30px;
+}
+#enviar-email:hover {
+    background: #159F85;
+    text-decoration: none;
+}
+/* eMail End */
+
+
+/* Resumen */
+.consumos-left{
+    border-right: 1px solid #DDDDDD;
+}
+
+.consumos-left,
+.consumos-right{
+    width: 49%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+.tab-resumen p{
+    padding: 0px 0 10px 10px;
+}
+.tab-resumen a{
+    text-align: center;
+    font-weight: 100;
+    margin: 0 auto 10px;
+}
+.divarius-popover li {
+    font-size: 12px;
+}
+/* End Resumen */

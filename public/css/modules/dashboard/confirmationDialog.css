@@ -1,0 +1,39 @@
+.divarius-confirmationModal {
+    height: 195px;
+    width: 428px !important;
+    border: 1px solid #A5A5A5;
+    border-radius: 0 0 0 0;
+}
+.divarius-confirmationModal .ui-widget-content {
+    background: #FFF;
+    border: none;
+}
+.divarius-confirmationModal .ui-icon.ui-icon-alert {
+    background: #469FB9 url(../../../img/confirmation-icon.jpg) no-repeat center center;
+    height: 101px;
+    width: 100px;
+}
+.divarius-confirmationModal #dialog-confirm {
+    height: 145px !important
+}
+ui-widget-overlay {
+    background: none repeat scroll 0 0 #FFFFFF !important;
+    opacity: 0.8;
+}
+.divarius-confirmationModal .ui-button {
+    background: none repeat scroll 0 0 transparent;
+    border-radius: 0 0 0 0;
+    color: #FFFFFF;
+    height: 43px;
+    width: 100px;
+}
+.divarius-confirmationModal .btn_Confirmar {
+    background: #42BD9B;
+}
+.divarius-confirmationModal .btn_Cancelar {
+    background: #BEBEBE;
+}
+.ui-widget-overlay {
+    background: none repeat scroll 0 0 #FFFFFF;
+    opacity: 0.8;
+}

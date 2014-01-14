@@ -1,0 +1,86 @@
+@import 'tablesorter.css';
+@import '../../../css/jquery_plugins/fancybox/jquery.fancybox.css';
+@import '../../../css/ui/simple/jquery-ui-1.10.1.custom.min.css';
+
+.loading{
+	background:url('images/loading.gif') left top no-repeat;
+	padding-left: 30px;
+}
+
+
+/* Habitacion Nueva */
+.habitacionABM input[type="text"],
+.habitacionABM select{
+  height: 38px;
+  width: 98%;
+  line-height: 34px;
+}
+.habitacionABM .chosen-drop input[type="text"]{
+  height: 28px;
+}
+
+.habitacionABM textarea{
+  width: 98%; 
+}
+
+.habitacionABM .chosen-container a.chosen-single{
+  border-radius: 0 !important;
+}
+#categoria_chosen a{
+  height: 37px;
+  line-height: 36px;
+}
+
+.habitacionABM .category .chosen-container a.chosen-single{
+  height: 38px;
+  line-height: 38px;
+}
+.habitacionABM input[type="text"],
+.habitacionABM select,
+.habitacionABM textarea{
+  border: 1px solid #469FB9;
+  background: #fff;
+  font-weight: normal;
+  color: #000;
+}
+.habitacionABM .chosen-container{
+  width: 98% !important;
+}
+.habitacionABM #field_cant_estandar_adultos_chosen, 
+.habitacionABM #field_cant_estandar_menores_chosen, 
+.habitacionABM #field_cant_maxima_adultos_chosen, 
+.habitacionABM #field_cant_maxima_menores_chosen{
+  width: 52% !important;
+} 
+.habitacionABM .chosen-container .chosen-drop{
+   border-radius: 0 0 0 0;
+   border: 1px solid #469FB9;
+}
+
+
+#serv_inc_chosen{
+  margin: 16px 0 0 0;
+}
+.habitacionABM .checkbox-title{
+  width: 130px;
+}
+#field-descripcion{
+  height: 70px;
+}
+#field-observaciones{
+  height: 52px;
+}
+
+.habitacionABM .roundedThree:first-child{
+	margin-top: 10px;
+}
+
+.content-gral-nav{
+  text-align: center;
+}
+
+
+
+
+
+
