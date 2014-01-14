@@ -1,4 +1,0 @@
-e-divarius
-==========
-
-Booking Online
