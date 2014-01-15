@@ -73,6 +73,7 @@ class reservation_controller extends CI_Controller {
                     
                     $crud->callback_column('status', array($this, '_callback_status'));
                     $crud->set_subject('Reserva');
+                    $crud->unset_export();
                     $output = $crud->render();
                     $this->output($output);
 		}catch(Exception $e){

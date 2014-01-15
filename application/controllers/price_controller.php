@@ -53,6 +53,8 @@ class price_controller extends CI_Controller {
 
                 $crud->add_action('Editar Precios', '', '', '', array($this, 'addPriceAction'));
                 
+                $crud->unset_export();
+                
                 $output = $crud->render();
                 $this->output($output);
             } catch (Exception $e) {

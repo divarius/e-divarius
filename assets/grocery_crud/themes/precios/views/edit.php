@@ -56,9 +56,9 @@ $this->set_js($this->default_theme_path.'/twitter-bootstrap/js/jquery.functions.
                             </div>
                             <div class="span6">
                             	<div class="pull-right">
-	                            	<input type="button" value="<?php echo $this->l('form_update_changes'); ?>" class="midium-btn blue-btn submit-form"/>
+	                            	<input type="button" value="Guardar" class="midium-btn blue-btn submit-form"/>
 									<?php 	if(!$this->unset_back_to_list) { ?>
-										<input type="button" value="<?php echo $this->l('form_update_and_go_back'); ?>" id="save-and-go-back-button" class="midium-btn blue-btn"/>
+										<input type="button" value="Guardar y Volver al Dash" id="save-and-go-back-button" class="midium-btn blue-btn"/>
 										<input type="button" value="<?php echo $this->l('form_cancel'); ?>" class="midium-btn grey-btn return-to-list" />
 									<?php 	} ?>
 								</div>

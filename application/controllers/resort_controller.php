@@ -70,7 +70,7 @@ class resort_controller extends CI_Controller {
                     
                     /**/
                     $crud->callback_after_insert(array($this, 'setIdEstablecimiento'));
-                    
+                    $crud->unset_export();
                     $output = $crud->render();
                     $this->output($output);
 		}catch(Exception $e){
