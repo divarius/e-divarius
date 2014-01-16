@@ -1,0 +1,26 @@
+body{background:url(http://www.e-divarius.com/public/css/../img/vertical_line.jpg) repeat-x;font-family:'Open Sans',sans-serif}textarea,select{font-family:'Open Sans',sans-serif}.js, .js
+body{overflow:hidden}.js body>*{visibility:hidden}.js
+#loading_layer{visibility:visible;display:block !important;position:absolute;top:0;left:0;width:100%;height:100%;background:#fff;z-index:10000}.js #loading_layer
+img{position:fixed;top:50%;left:50%;width:64px;height:10px;margin:-5px 0 0 -32px}.js .tab-pane{display:block !important}.js
+.hide{display:inherit}button,button:hover,a,a:hover{outline:none !important;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-webkit-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}input::-webkit-input-placeholder{color:black}input:-moz-placeholder{color:black}input::-moz-placeholder{color:black}input:-ms-input-placeholder{color:black}textarea::-webkit-input-placeholder{color:black}textarea:-moz-placeholder{color:black}textarea::-moz-placeholder{color:black}textarea:-ms-input-placeholder{color:black}.hidden{display:none}.remove-image{padding-right:5px;padding-top:2px;background:url(http://www.e-divarius.com/public/css/../img/delete.png) no-repeat center;width:14px;height:14px;display:inline-block;padding-right:5px;padding-top:2px}.control-group{margin-bottom:10px}.group-data .control-group input,
+.group-data .control-group
+textarea{margin-bottom:0px;margin-top:0px;width:338px}.group-data .control-group{margin-bottom:3px}footer{background:#EEE;height:auto}footer
+figure{width:940px;margin:auto;padding-top:28px;padding-bottom:60px;overflow:hidden}.midium-btn{border:medium none;color:#FFF;display:inline-block;font-size:13px;height:40px;line-height:40px;min-width:90px;padding:0
+12px;text-align:center;text-decoration:none;vertical-align:middle}.midium-btn:hover{color:#fff;text-decoration:none;cursor:pointer}.green-btn{background:#19BB9B}.green-btn:hover{background:#159F85}.red-btn{background:#E74B3B}.red-btn:hover{background:#BF392B}.blue-btn{background:#3398DA}.blue-btn:hover{background:#77CCDB}.brown-btn{background:#8A4B42}.brown-btn:hover{background:#BF392B}.grey-btn{background:#BBB}.grey-btn:hover{background:#BDC3C7}.greyStrong-btn{background:#95A5A5}.greyStrong-btn:hover{background:#7F8B8D}.menu-container a.dropdown-toggle{background:#469FB9;text-align:center;text-decoration:none;line-height:2.4;font-size:90%;width:100px}#calendarHeader
+input{height:28px;width:100%;border:1px
+solid #469FB9}.menu-container .dropdown-toggle{background:#77CCDB;display:block;height:30px;width:77px;color:#FFF}.res-estados{border-top:14px solid #77CCDB;padding-top:10px;text-align:center}.res-estados
+li{display:inline-block;vertical-align:middle}.res-estados li
+span{height:18px;width:18px;margin:0
+8px 0 16px;display:inline-block;vertical-align:middle}.seleccion{background:#00A3D9;border:1px
+solid #00A3D9}.libre{background:#fff;border:1px
+solid #77CCDB}.no-disponible{background:#CCC;border:1px
+solid #CCC}.reserva-web{background:#C5ACE3;border:1px
+solid #C5ACE3}.pendiente-pago{background:#F3B672;border:1px
+solid #F3B672}.confirmado-ocupado{background:#C7E07A;border:1px
+solid #C7E07A}.group-data
+.controls{position:relative}label.error{position:absolute;color:red;z-index:1;text-align:right;width:40%;background:#FAFFBD;bottom: -4px;right:31px;font-size:0.7em}.ui-multiselect-menu .ui-widget-header{border-top:0px dashed #AED0EA;border-right:0px dashed #AED0EA;border-bottom:1px dashed #AED0EA;border-left:0px dashed #AED0EA;background:#fff}.ui-multiselect-menu .ui-widget-header
+input{margin-bottom:5px}.control-group .ui-state-default .ui-icon{background:url(http://www.e-divarius.com/public/css/../img/ui-icon-blue.png) no-repeat center;margin:8px}.control-group .ui-state-default{border:1px
+solid #469FB9;background:#fff;font-weight:normal;height:38px;line-height:34px;color:#000}.ui-corner-all{border-radius:0px !important}.categorias-container .chosen-container-single .chosen-single div b,
+.categorias-container .chosen-container-active.chosen-with-drop .chosen-single div b,
+#buildReservationForm .chosen-container-single .chosen-single div b,
+.chosen-container.chosen-con
